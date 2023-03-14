@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Page Animations - Barbajs</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body data-barba="wrapper">
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="wrapper"><!-- not specific to barba -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="services.html">services</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- is specific to barba -->
+        <main data-barba="container" data-barba-namespace="home">
+            <div class="left">
+                <h1>An Ongoing Experience</h1>
+                <a href="services.html" class="cta">Take me there</a>
+            </div>
+            <img src="img/photo1.jpg" alt="Interior">
+        </main>
+    </div>
+
+    <!-- Barba Core -->
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <!-- GSAP for animation -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+
+    <!-- Main JS file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
